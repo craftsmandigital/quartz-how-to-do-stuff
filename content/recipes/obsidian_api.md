@@ -2,7 +2,6 @@
 {"publish":true,"title":"Obsidian API, ingoing, outgoing","created":"2025-08-19","modified":"2025-08-19","tags":["#recipes"],"cssclasses":""}
 ---
 
-.
 
 ## Connecting Obsidian REST API
 
@@ -31,6 +30,7 @@ curl -H "Authorization: Bearer <<YOURAPI>>" https://obsidian.craftsmandigital.ne
 ```
 
 Her is my own [N8N test](https://n8n.craftsmandigital.net/workflow/YI2Nxvfpu1PZGnhI)
+
 
 ## Executing webhooks from obsidian
 

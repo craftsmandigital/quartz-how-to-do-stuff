@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"AI Prompt: Obsidian Technical Documentation Style Guide","created":"2025-08-01","modified":"2025-08-02","tags":["#prompt"],"cssclasses":""}
+{"publish":true,"title":"AI Prompt: Obsidian Technical Documentation Style Guide","created":"2025-08-01","modified":"2025-08-02","tags":["prompt"],"cssclasses":""}
 ---
 
 

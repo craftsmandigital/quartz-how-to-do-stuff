@@ -81,6 +81,7 @@ Connect the TRRS breakout boards to establish communication between the halves. 
 *   **Tip (T):** Connect to **VBUS** (any VBUS pin).
 *   **Ring 1 (R1):** Connect to **GP1** (Pin 2).
 *   **Sleeve (S):** Connect to **GND** (any GND pin).
+
 If these terms on the TRRS connectors does not say nothing to you, just connect them on TRRS connectors that are the same on both sides of keyboard.
 
 > [!danger] Electrical Hazard

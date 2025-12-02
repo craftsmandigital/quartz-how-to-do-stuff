@@ -197,12 +197,12 @@ keyboard.diode_orientation = DiodeOrientation.COL2ROW
 # --- 4. KEYMAP ---
 keyboard.keymap = [
     [
-        # Left Hand (Cols 0-4)                     # Right Hand (Cols 0-4)
-        KC.Q,  KC.W,  KC.E,    KC.R,    KC.T,      KC.Y,   KC.U,    KC.I,    KC.O,   KC.P,    # Row 0
-        KC.A,  KC.S,  KC.D,    KC.F,    KC.G,      KC.H,   KC.J,    KC.K,    KC.L,   KC.SCLN, # Row 1
-        KC.Z,  KC.X,  KC.C,    KC.V,    KC.B,      KC.N,   KC.M,    KC.COMM, KC.DOT, KC.SLSH, # Row 2
+        # Left Hand (Cols 1-5)                     # Right Hand (Cols 1-5)
+        KC.Q,  KC.W,  KC.E,    KC.R,    KC.T,      KC.Y,   KC.U,    KC.I,    KC.O,   KC.P,    # Row 1
+        KC.A,  KC.S,  KC.D,    KC.F,    KC.G,      KC.H,   KC.J,    KC.K,    KC.L,   KC.SCLN, # Row 2
+        KC.Z,  KC.X,  KC.C,    KC.V,    KC.B,      KC.N,   KC.M,    KC.COMM, KC.DOT, KC.SLSH, # Row 3
         
-        # Thumbs (Row 3)
+        # Thumbs (Row 4)
         KC.NO, KC.NO, KC.LCTL, KC.LSFT, KC.SPC,    KC.ENT, KC.BSPC, KC.LALT, KC.NO,  KC.NO,
     ]
 ]

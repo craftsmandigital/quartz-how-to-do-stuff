@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Building a KMK Split Keyboard with RP2040 Dactyl Minidox (36-Key).","created":"2025-11-29","modified":"2025-11-29","tags":["keyboard","KMK","python","split-keyboard"],"cssclasses":"","socialImage":"https://img.ellie.wtf/i/1a4023009b55738bd5c8a9dbad4b855d7168308ff7782668a5df928e3ea7d0bf.jpg"}
+{"publish":true,"title":"Building a KMK Split Keyboard with RP2040 Dactyl Minidox (36-Key).","created":"2025-11-29","modified":"2025-12-02","tags":["#keyboard","#KMK","#python","#split-keyboard"],"cssclasses":"","socialImage":"https://img.ellie.wtf/i/1a4023009b55738bd5c8a9dbad4b855d7168308ff7782668a5df928e3ea7d0bf.jpg"}
 ---
 
 This guide provides step-by-step instructions for hand-wiring a split-keyboard. A 36-key Dactyl Minidox keyboard using Raspberry Pi Picos(RP2040 ) and KMK Firmware.
@@ -47,10 +47,11 @@ Here the rows consist of diodes soldered together(Don't do as mee. It is easier 
 ![[Keyboard related/assets/Wiring_Steps 1.jpg]]
 
 2.  **Columns:** Solder wires connecting the **left** pin of every switch vertically(Red, orange, yellow, green and blue colored wires on picture)
+   
    ![[Keyboard related/assets/Wiring_Steps 4.jpg|300]]
 3.  The rules for soldering rows and columns to switches, are the same for both sides of keyboard(The pictures shows the left side of the keyboard) 
-	1. **Rows**: solder always on **left** pin of switch 
-	2. **Columns**: solder always on **right** pin of switch
+	- **Rows**: solder always on **left** pin of switch 
+	- **Columns**: solder always on **right** pin of switch
 ### 2. Connecting the Controller
 Look at the picture above and under, the columns and rows are prepared with female `DuPont` wires, that makes it easy to connect to to a controller with pins. That makes it easy to reconnect rows/cols to controller if you do some mistakes. It also makes it easy to switch controller later on for an upgrade.
 ![[Keyboard related/assets/2._Connecting_the_Controller 1.jpg|600]]
@@ -92,13 +93,14 @@ If these terms on the TRRS connectors does not say nothing to you, just connect 
 To allow the code to automatically detect which side is which, you must add a physical "jumper" wire to the **Right Controller** only.
 1.  **Right Pico:** Connect a female to female DuPont cable connecting **GP21** directly to a  **GND** pin of choice.
 2.  **Left Pico:** Nothing to do here.
+
 In the [documentation for KMK split keyboards](https://github.com/KMKfw/kmk_firmware/blob/main/docs/en/split_keyboards.md), there is described that you have to rename the drives for Circuit python, for both sides. That is not necessary with this build.   
 ## Firmware Configuration
 
 ### 1. Installing Circuit Python and KMK
 
-1. I assume that you have done this already.
-   Follow the instruction on the [KMK get started page](https://github.com/KMKfw/kmk_firmware/blob/main/docs/en/Getting_Started.md) to make sure you `Pi Picos` are tested and up and running. Do the same procedure on both `Pi Picos`
+I assume that you have done this already.
+Follow the instruction on the [KMK get started page](https://github.com/KMKfw/kmk_firmware/blob/main/docs/en/Getting_Started.md) to make sure your `Pi Picos` are tested and up and running. Do the same procedure on both `Pi Picos`
 ### 2. The Code (`code.py`)
 
 Copy the code below into the file named `code.py`, overriding the test code you made in the previous step. Do it on **BOTH** drives, Left and right.

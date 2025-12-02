@@ -101,6 +101,7 @@ In the [documentation for KMK split keyboards](https://github.com/KMKfw/kmk_firm
 ### 1. Installing Circuit Python and KMK
 
 I assume that you have done this already.
+
 Follow the instruction on the [KMK get started page](https://github.com/KMKfw/kmk_firmware/blob/main/docs/en/Getting_Started.md) to make sure your `Pi Picos` are tested and up and running. Do the same procedure on both `Pi Picos`
 ### 2. The Code (`code.py`)
 

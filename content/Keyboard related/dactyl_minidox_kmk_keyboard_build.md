@@ -153,10 +153,10 @@ jumper = digitalio.DigitalInOut(SIDE_DETECTION_PIN)
 jumper.direction = digitalio.Direction.INPUT
 jumper.pull = digitalio.Pull.UP
 
-
 is_right = False
 if not jumper.value:
     is_right = True
+
 
 # --- 2. SPLIT CONFIGURATION ---
 split = Split(
@@ -175,9 +175,6 @@ keyboard.modules.append(split)
 
 # --- 3. PINS & MATRIX (The Fix) ---
 # We use the SAME pin order for both sides.
-# Because you wired the Right side mirrored (GP2=Inner), 
-# we do NOT need to reverse the list in software.
-
 # Order: GP2 -> GP3 -> GP4 -> GP5 -> GP28
 col_pins = (
     PINKY_COL_PIN,
@@ -192,10 +189,9 @@ row_pins = (
     BOTTOM_ROW_PIN,
     THUMB_ROW_PIN,
 )
-
+# Matrix
 keyboard.col_pins = col_pins
 keyboard.row_pins = row_pins
-
 keyboard.diode_orientation = DiodeOrientation.COL2ROW
 
 # --- 4. KEYMAP ---

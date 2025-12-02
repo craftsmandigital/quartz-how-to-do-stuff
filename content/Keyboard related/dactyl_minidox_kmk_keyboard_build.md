@@ -49,6 +49,7 @@ Here the rows consist of diodes soldered together(Don't do as mee. It is easier 
 2.  **Columns:** Solder wires connecting the **left** pin of every switch vertically(Red, orange, yellow, green and blue colored wires on picture)
    
    ![[Keyboard related/assets/Wiring_Steps 4.jpg|300]]
+   
 3.  The rules for soldering rows and columns to switches, are the same for both sides of keyboard(The pictures shows the left side of the keyboard) 
 	- **Rows**: solder always on **left** pin of switch 
 	- **Columns**: solder always on **right** pin of switch

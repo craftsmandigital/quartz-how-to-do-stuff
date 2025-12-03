@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Building a KMK Split Keyboard with RP2040 Dactyl Minidox (36-Key).","created":"2025-11-29","modified":"2025-12-02","tags":["#keyboard","#KMK","#python","#split-keyboard"],"cssclasses":"","socialImage":"https://img.ellie.wtf/i/1a4023009b55738bd5c8a9dbad4b855d7168308ff7782668a5df928e3ea7d0bf.jpg"}
+{"publish":true,"title":"Building a KMK Split Keyboard with RP2040 Dactyl Minidox (36-Key).","created":"2025-11-29","modified":"2025-12-02","tags":["keyboard","KMK","python","split-keyboard"],"cssclasses":"","socialImage":"https://img.ellie.wtf/i/1a4023009b55738bd5c8a9dbad4b855d7168308ff7782668a5df928e3ea7d0bf.jpg"}
 ---
 
 This guide provides step-by-step instructions for hand-wiring a split-keyboard. A 36-key Dactyl Minidox keyboard using Raspberry Pi Picos(RP2040 ) and KMK Firmware.
@@ -23,10 +23,11 @@ This build uses a "Visual Flow" wiring technique, The right half of keyboard is 
 | ![[Keyboard related/assets/Bill_of_Materials 7.jpg]]  | High Temperature Heat Tape                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 15 mm                               | 1 roll          |
 
 ### Tools
-*   Soldering iron and solder
-*   Wire strippers/cutters
-*   Tweezers
-*   Multimeter (optional, for debugging)
+* Soldering iron and solder
+* Glue gun and glue sticks
+* Wire strippers/cutters
+* Tweezers
+* Multimeter (optional, for debugging)
 ### Testing and preparing your Pi Picos(controllers)
 Before you begin, I recommend to get your `Pi Picos` ready to rock.
 Follow the instruction on the [KMK get started page](https://github.com/KMKfw/kmk_firmware/blob/main/docs/en/Getting_Started.md) to make sure you controllers are tested and up and running. Do the same procedure on both controllers before you start the assembly 

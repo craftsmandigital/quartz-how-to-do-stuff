@@ -1,5 +1,13 @@
 ---
-{"publish":true,"title":"Hvordan lage en post nettside i Mikaelkirken wordpress","created":"2025-08-01","modified":"2025-08-02","tags":["prompt","WordPress","ai"],"cssclasses":""}
+publish: true
+title: Hvordan lage en post nettside i Mikaelkirken wordpress
+created: 2025-08-01
+modified: 2025-08-02
+tags:
+  - prompt
+  - WordPress
+  - ai
+cssclasses: ""
 ---
 
 This guide provides a standardized AI prompt for generating formatted WordPress posts using [Google AI Studio](https://aistudio.google.com). The prompt is specifically designed to handle the limitations of the WordPress classic editor by using table-based layouts for responsive design.

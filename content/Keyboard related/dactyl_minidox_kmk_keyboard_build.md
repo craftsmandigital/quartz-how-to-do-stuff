@@ -1,5 +1,15 @@
 ---
-{"publish":true,"title":"Building a KMK Split Keyboard with RP2040 Dactyl Minidox (36-Key).","created":"2025-11-29","modified":"2025-12-02","tags":["keyboard","KMK","python","split-keyboard"],"cssclasses":"","socialImage":"https://img.ellie.wtf/i/1a4023009b55738bd5c8a9dbad4b855d7168308ff7782668a5df928e3ea7d0bf.jpg"}
+publish: true
+title: Building a KMK Split Keyboard with RP2040 Dactyl Minidox (36-Key).
+created: 2025-11-29
+modified: 2025-12-02
+tags:
+  - keyboard
+  - KMK
+  - python
+  - split-keyboard
+cssclasses: ""
+socialImage: https://img.ellie.wtf/i/1a4023009b55738bd5c8a9dbad4b855d7168308ff7782668a5df928e3ea7d0bf.jpg
 ---
 
 This guide provides step-by-step instructions for hand-wiring a split-keyboard. A 36-key Dactyl Minidox keyboard using Raspberry Pi Picos(RP2040 ) and KMK Firmware.

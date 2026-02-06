@@ -1,5 +1,13 @@
 ---
-{"publish":true,"title":"How to backup N8N selfhosted Docker","created":"2025-08-19","modified":"2025-08-19","tags":["recipes","n8n","backup"],"cssclasses":""}
+publish: true
+title: How to backup N8N selfhosted Docker
+created: 2025-08-19
+modified: 2025-08-19
+tags:
+  - recipes
+  - n8n
+  - backup
+cssclasses: ""
 ---
 
 ## Setting up the backup environment
@@ -21,12 +29,18 @@ git remote add origin git@github.com:craftsmandigital/n8n_backup.git
 git push -u origin main
 ```
 ## Steps in the backup process
+- Copy compose.yaml and .env to back it up
 - Export n8n workflows to a folder inside container
 - Same as above with the credentials
 - Copy workflows/credentials to the host machine on a git maintained folder
 - Push the backup to GitHub
 
 ```bash
+# Copy compose.yaml to back it up
+cp /opt/stacks/n8n/compose.yaml ~/backup/n8n_backup/
+# Remember to delete encryption key inside .env
+cp /opt/stacks/n8n/.env ~/backup/n8n_backup/
+
 #copy all workflows to a folder inside container
 docker exec -u node -it n8n-n8n-1 n8n export:workflow --backup --output=/tmp/backup/workflows
 

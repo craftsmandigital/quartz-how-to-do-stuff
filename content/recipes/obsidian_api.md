@@ -1,5 +1,11 @@
 ---
-{"publish":true,"title":"Obsidian API, ingoing, outgoing","created":"2025-08-19","modified":"2025-08-19","tags":["recipes"],"cssclasses":""}
+publish: true
+title: Obsidian API, ingoing, outgoing
+created: 2025-08-19
+modified: 2025-08-19
+tags:
+  - recipes
+cssclasses: ""
 ---
 
 
